@@ -6,9 +6,9 @@ pipeline {
 	  sh 'printenv'
 	  sh echo 'hi'
 	      }
-	#steps {
-	 # sh 'ant -f build.xml -v'
-	  #    }
+	steps {
+	  sh 'ant -f build.xml -v'
+	      }
 	}
   }	
 }
