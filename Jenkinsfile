@@ -6,11 +6,6 @@ pipeline {
 		    sh 'printenv'
 		    sh 'ant -f build.xml -v'
 		    }
-		}
-    stage ('post-build') {
-	  steps {
-		  archiveArtifacts artifacts:'dist/*.war', fingerprint:true
-	  }
     	}
 	}	
 }
