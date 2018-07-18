@@ -9,7 +9,7 @@ pipeline {
 		}
     stage ('post-build') {
 	  steps {
-		  archiveArtifacts artifacts:'dist/*.war'
+		  archiveArtifacts artifacts:'dist/*.war', fingerprint:true
 	  }
     	}
 	}	
